@@ -5,21 +5,21 @@
 class Offat < Formula
   desc "Autonomous REST API Vulnerability Assessment Tool"
   homepage "https://owasp.org/OFFAT/"
-  version "0.21.0-beta"
+  version "0.22.0-beta"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/owasp-offat/offat/releases/download/v0.21.0-beta/offat_Darwin_amd64.zip"
-      sha256 "8b7310447a0a6856b7ea519361d425870b52dcf011381827a9890b36bd0c69fe"
+      url "https://github.com/owasp-offat/offat/releases/download/v0.22.0-beta/offat_Darwin_amd64.zip"
+      sha256 "2775cbd5e514033852db559df6c29c31de5b1511e2f90073ca23809fcb47b4b7"
 
       def install
         bin.install "offat"
       end
     end
     on_arm do
-      url "https://github.com/owasp-offat/offat/releases/download/v0.21.0-beta/offat_Darwin_arm64.zip"
-      sha256 "1146b7993d106f863ae1c5f9c6a2bec93f21dd9fd0ff9e5e4812bf9bc42ffdbf"
+      url "https://github.com/owasp-offat/offat/releases/download/v0.22.0-beta/offat_Darwin_arm64.zip"
+      sha256 "560501f367c0426e9349410c77c0f494bea22a5ae16ef89af9d044ccfce5db54"
 
       def install
         bin.install "offat"
@@ -30,8 +30,8 @@ class Offat < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/owasp-offat/offat/releases/download/v0.21.0-beta/offat_Linux_amd64.zip"
-        sha256 "9067e585976021a577f566aff40d2109a89ec2057d71994f5ab12a6e8f99908f"
+        url "https://github.com/owasp-offat/offat/releases/download/v0.22.0-beta/offat_Linux_amd64.zip"
+        sha256 "f14784d2466fe31630b72216ef02710c8827ba7927cff0aaa8443c78534328cf"
 
         def install
           bin.install "offat"
@@ -40,8 +40,8 @@ class Offat < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/owasp-offat/offat/releases/download/v0.21.0-beta/offat_Linux_arm.zip"
-        sha256 "cfc902a1fb9d33b8fa166a9570467228d15c3f4d0e804a34731d80c2a59bdbc3"
+        url "https://github.com/owasp-offat/offat/releases/download/v0.22.0-beta/offat_Linux_arm.zip"
+        sha256 "2c6bd0f75b7b1d796ab4bc33faa34ac6b1d2cdb7e7250bf78c0dffd51698fe84"
 
         def install
           bin.install "offat"
@@ -50,8 +50,8 @@ class Offat < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/owasp-offat/offat/releases/download/v0.21.0-beta/offat_Linux_arm64.zip"
-        sha256 "d0eff557b571f87771df8abb804b5d26de015339f0b84fcf29c42ccd41270935"
+        url "https://github.com/owasp-offat/offat/releases/download/v0.22.0-beta/offat_Linux_arm64.zip"
+        sha256 "2d47d3c6e30822f42fa4cc5c3c431c33264b5d5e4243060d0fe511aa1c5217a7"
 
         def install
           bin.install "offat"
